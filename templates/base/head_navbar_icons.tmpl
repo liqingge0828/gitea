@@ -12,7 +12,7 @@
 	</a>
 	{{end}}
 	<a class="item {{$itemExtraClass}}" href="{{AppSubUrl}}/notifications" data-tooltip-content="{{ctx.Locale.Tr "notifications"}}">
-		<div class="tw-relative">
+		<div class="tw-relative tw-flex">
 			{{svg "octicon-bell"}}
 			<span class="notification_count{{if not $notificationUnreadCount}} tw-hidden{{end}}">{{$notificationUnreadCount}}</span>
 		</div>
